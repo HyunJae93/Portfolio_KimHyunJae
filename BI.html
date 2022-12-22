@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>식화원 BI</title>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/f_fabicon.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/BI.css">
+</head>
+
+<body>
+    <div id="bg">
+        <div id="BI">
+            <img src="./images/BI/01.jpg" alt="BI사진">
+            <img src="./images/BI/02.jpg" alt="BI사진">
+            <img src="./images/BI/03.jpg" alt="BI사진">
+            <img src="./images/BI/04.jpg" alt="BI사진">
+            <img src="./images/BI/05.jpg" alt="BI사진">
+            <img src="./images/BI/06.jpg" alt="BI사진">
+            <img src="./images/BI/07.jpg" alt="BI사진">
+            <img src="./images/BI/08.jpg" alt="BI사진">
+            <img src="./images/BI/09.jpg" alt="BI사진">
+        </div>
+        <div class="fixed_box">
+            <a href="#BI" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+                <img src="./images/top.png" alt="top">
+            </a>
+        </div>
+        <div class="fixed_box2">
+            <a href="./index.html" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+                <img src="./images/home.png" alt="home">
+            </a>
+        </div>
+    </div>
+    <!-- BG_f -->
+
+
+
+
+
+    <!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
