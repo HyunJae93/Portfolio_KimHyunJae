@@ -352,6 +352,7 @@ a:hover {
 ==================================================*/
 #skill {
     padding: 100px 0;
+    padding-bottom: 0;
 }
 
 .chart {
@@ -676,12 +677,16 @@ a:hover {
 /* contact
 ==================================================*/
 
+#margin_box {
+    padding-top: 200px;
+}
+
 #contact {
-    padding: 100px 0;
+    padding-top: 110px;
+    padding-bottom: 180px;
     color: #fff;
     background: url(../images/mb3.jpg) no-repeat center center fixed;
     background-size: cover;
-    margin-top: 100px;
 }
 
 #contact-form input,
@@ -756,6 +761,10 @@ a:hover {
 
     .about-border {
         left: 342px;
+    }
+
+    #contact {
+        padding: 150px 0;
     }
 }
 
