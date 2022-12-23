@@ -272,7 +272,7 @@ nav li {
 
 nav li a {
     text-transform: uppercase;
-    color: #444;
+    color: #fff;
     font-family: "SBAggroB";
     font-size: 12px;
     font-weight: bold;
@@ -287,6 +287,10 @@ nav li a {
     padding: 10px 0;
 }
 
+.bg-nav ul a {
+    color: #444;
+}
+
 a:focus {
     color: #444;
     text-decoration: none;
@@ -297,7 +301,7 @@ a:hover {
     text-decoration: none;
 }
 
-a.active {
+.navbar-fixed-top ul li a.active {
     color: #425BB5;
 }
 
@@ -677,6 +681,7 @@ a.active {
     color: #fff;
     background: url(../images/mb3.jpg) no-repeat center center fixed;
     background-size: cover;
+    margin-top: 100px;
 }
 
 #contact-form input,
